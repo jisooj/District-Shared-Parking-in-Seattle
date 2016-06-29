@@ -1,0 +1,6 @@
+telnet localhost 6571
+
+press button next to ethernet port to reset atmega and restart logging
+
+In a bash shell on a computer that is on the network with the yun
+ssh root@192.168.2.2 'telnet localhost 6571' | tee -a out.txt

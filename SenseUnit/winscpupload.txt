@@ -1,0 +1,5 @@
+open sftp://pi:park!andgo@192.168.2.3
+put finalprog.hex /home/pi/si4010/
+call cd si4010
+call ./progit.sh
+exit

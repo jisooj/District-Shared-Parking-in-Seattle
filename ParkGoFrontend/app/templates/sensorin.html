@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+	<h1>Test data ingest</h1>
+		<form action="{{ url_for('sensorin') }}" method="post">
+		{{ form.hidden_tag() }}
+		<label for="sensorId">Sensor ID:</label> {{ form.sensorId(class_="form-control") }}<br>
+		<label for="temperature">Temperature:</label> {{ form.temperature(class_="form-control") }}<br>
+		<label for="occupied">Occupied:</label> {{ form.occupied(class_="form-control") }}<br>
+		<label for="battVolt">Battery Voltage:</label> {{ form.battVolt(class_="form-control") }}<br>
+		<input type="submit" class="btn btn-default btn-success" value="Post">
+	</form>
+{% endblock %}

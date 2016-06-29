@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Parking Lot{% endblock %}
+
+{% block specificHead %}
+   <meta http-equiv="refresh" content="3">
+   <style>
+      {% for spot in lotLayout %}
+      #pksp_{{spot.uid}} {
+         left: {{(100/2) * spot.leftCoord}}px;
+         top: {{(100/2) * spot.topCoord}}px;
+		 
+		 {% if spot.rotation == 'l' %}
+			border-bottom: none;
+			transform: rotate(90deg);
+		 {% endif %}		 
+		 {% if spot.rotation == 'r' %}
+			border-bottom: none;
+			transform: rotate(-90deg);
+		 {% endif %}
+		 {% if spot.rotation == 'u' %}
+			border-top: none;
+		 {% endif %}
+		 {% if spot.rotation == 'd' %}
+			border-bottom: none;
+		 {% endif %}
+      }
+      {% endfor %}
+   </style>
+{% endblock %}
+
+{% block content %}
+	<div class="container status_display">
+		<h1>Current Parking Lot:</h1>
+		<div class="parking_lot">
+
+			{% for spot in parkingSpots %}
+			<div id="pksp_{{ spot.sensorId }}" class="parking_space">
+				{% if spot.occupied == True %}
+				<i class="icon icon_car fa fa-car"></i>
+				{% else %}
+				<i class="icon icon_open fa fa-circle-o"></i>
+				{% endif %}
+				<div class="parking_spot_number">
+					{{ spot.sensorId }}
+				</div>
+				<div class="parking_space_info">
+					<i class="fa fa-battery-three-quarters"> {{ spot.battVolt }}</i>
+					<!--<i class="fa fa-clock-o"> {{ spot.timestamp }} </i>-->
+					<i class="fa fa-sun-o"> {{ spot.temperature }}&deg;C</i>
+				</div>
+			</div>
+			{% endfor %}
+
+		</div>
+	</div>
+{% endblock %}

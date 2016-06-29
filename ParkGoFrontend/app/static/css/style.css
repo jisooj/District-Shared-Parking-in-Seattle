@@ -1,0 +1,55 @@
+.status_display {
+	text-align:center;
+}
+
+.parking_lot {
+	background-color: #555;
+	/*padding: 2em;*/
+	border: 20px #555 solid;
+	display: inline-block;
+	min-width: 800px;
+	min-height: 450px;
+	position: relative;
+}
+
+.parking_space_info {
+	color: #FFF;
+	background-color: #111;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.parking_spot_number {
+	color: #FFF;
+	font-size: 2em;
+}
+
+.parking_space {
+	border-top: 4px solid #DDD;
+	border-right: 4px solid #DDD;
+	border-left: 4px solid #DDD;
+	border-bottom: 4px solid #DDD;
+	height: 200px;
+	width: 100px;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 50px;
+	margin: -4px;
+	position: absolute;
+	top:0px;
+	left:-200px;
+}
+
+
+i.icon {
+	font-size: 5em;
+}
+
+i.icon_car {
+	color: #FF7F00;
+}
+
+i.icon_open {
+	color: #0F0;
+}
