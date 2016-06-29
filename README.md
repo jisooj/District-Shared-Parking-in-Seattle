@@ -2,10 +2,10 @@
 
 ## EE 475 Project, Team: Park N' Go!
 
-    **Contributers:**
+    __Contributers:__
     - Rajdeep Singh
     - Alexander Huttunen
     - Jisoo Jung
     - Yaning Yang 
 
-See [`our report`](https://github.com/jisooj/District-Shared-Parking-in-Seattle/blob/master/Deliverables/EE475FinalReport.pdf) for more description.
+    See [`our report`](https://github.com/jisooj/District-Shared-Parking-in-Seattle/blob/master/Deliverables/EE475FinalReport.pdf) for more description.
