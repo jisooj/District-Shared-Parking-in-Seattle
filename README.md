@@ -2,7 +2,7 @@
 
 ## EE 475 Project, Team: Park N' Go!
 
-     **Contributers:**
+     ###Contributers:
     - Rajdeep Singh
     - Alexander Huttunen
     - Jisoo Jung
