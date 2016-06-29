@@ -1,8 +1,8 @@
 # District-Shared-Parking-in-Seattle 
 
-# EE 475 Project 
+## EE 475 Project 
 
-# Team: Park N' Go!
+## Team: Park N' Go!
 
 ## Contributers:
 - Rajdeep Singh
